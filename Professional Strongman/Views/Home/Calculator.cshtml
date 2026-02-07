@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+
+<h1>Strongman Tutoring Calculator</h1>
+<p>Want to learn about professional strongman? Whether you need help understanding events, training
+   programming, or competition strategy, enter how many hours you need and I'll calculate the cost.</p>
+
+<!-- input for number of hours -->
+<label for="hours">Number of Hours:</label>
+<input type="text" id="hours" placeholder="Enter hours" />
+
+<!-- shows the hourly rate, user cant edit this -->
+<label for="rate">Hourly Rate ($):</label>
+<input type="text" id="rate" value="50" readonly />
+
+<!-- button to do the calculation -->
+<button id="calculateBtn">Calculate Total</button>
+
+<!-- shows the total, also not editable -->
+<label for="total">Total Cost ($):</label>
+<input type="text" id="total" readonly />
+
+<!-- error message area -->
+<p id="errorMsg" style="color: red;"></p>
+
+@section Scripts {
+    <script src="~/js/calculator.js"></script>
+}

@@ -1,0 +1,64 @@
+/* basic styling for the site */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* main content area */
+.container {
+    padding: 20px;
+}
+
+/* images */
+img {
+    display: block;
+    margin: 15px 0;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* calculator page stuff */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-top: 5px;
+    width: 200px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    cursor: pointer;
+}

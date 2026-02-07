@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Professional Strongman</title>
+    <!-- custom favicon -->
+    <link rel="icon" type="image/x-icon" href="~/images/favicon.ico" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!-- nav bar at the top -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/Home/Calculator">Tutoring Calculator</a>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <!-- footer with copyright and my name -->
+    <footer>
+        <p>&copy; 2026 Jacob Dishman - Professional Strongman Fan Site</p>
+    </footer>
+
+    <!-- jquery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
