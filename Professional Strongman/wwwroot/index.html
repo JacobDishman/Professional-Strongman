@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Strongman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #16213e, #0f3460);
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 4px solid #e94560;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: #a0a0b0;
+        }
+
+        .athletes {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #16213e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-body h2 {
+            font-size: 1.5rem;
+            color: #e94560;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-body .country {
+            font-size: 0.9rem;
+            color: #a0a0b0;
+            margin-bottom: 1rem;
+        }
+
+        .card-body p {
+            line-height: 1.6;
+            color: #c0c0d0;
+        }
+
+        .achievements {
+            margin-top: 1rem;
+            list-style: none;
+        }
+
+        .achievements li {
+            padding: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+            color: #c0c0d0;
+        }
+
+        .achievements li::before {
+            content: "\25B8";
+            position: absolute;
+            left: 0;
+            color: #e94560;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #606080;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Strongman</h1>
+        <p>Celebrating the World's Strongest Athletes</p>
+    </header>
+
+    <section class="athletes">
+        <div class="card">
+            <img src="/images/oleksii-novikov.jpg" alt="Oleksii Novikov holding the World's Strongest Man trophy">
+            <div class="card-body">
+                <h2>Oleksii Novikov</h2>
+                <div class="country">Ukraine</div>
+                <p>Oleksii Novikov became the youngest World's Strongest Man champion in 2020 at just 24 years old. Known for his explosive speed and power, he dominated events like the Atlas Stones and Car Walk.</p>
+                <ul class="achievements">
+                    <li>World's Strongest Man 2020</li>
+                    <li>World's Ultimate Strongman Champion</li>
+                    <li>Europe's Strongest Man podium finisher</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/tom-stoltman.jpg" alt="Tom Stoltman with his three World's Strongest Man trophies">
+            <div class="card-body">
+                <h2>Tom Stoltman</h2>
+                <div class="country">Scotland</div>
+                <p>Tom Stoltman has cemented himself as one of the greatest strongmen of all time with three World's Strongest Man titles. Standing at 6'8", he is a dominant force in Atlas Stones and loading events.</p>
+                <ul class="achievements">
+                    <li>3x World's Strongest Man (2021, 2022, 2024)</li>
+                    <li>Europe's Strongest Man winner</li>
+                    <li>World record holder in Atlas Stones</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/brian-shaw.jpg" alt="Brian Shaw performing a Hummer tire deadlift">
+            <div class="card-body">
+                <h2>Brian Shaw</h2>
+                <div class="country">United States</div>
+                <p>Brian Shaw is a four-time World's Strongest Man and one of the most accomplished strongmen in history. At 6'8" and over 400 lbs, he is renowned for his incredible deadlift strength and dominance in heavy loading events.</p>
+                <ul class="achievements">
+                    <li>4x World's Strongest Man (2011, 2013, 2015, 2016)</li>
+                    <li>Arnold Strongman Classic champion</li>
+                    <li>Renowned for Hummer tire deadlift performances</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Professional Strongman &mdash; Strength has no limits</p>
+    </footer>
+</body>
+</html>
