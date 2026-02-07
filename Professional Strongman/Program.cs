@@ -6,8 +6,6 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-app.UseStaticFiles();
-app.UseDefaultFiles();
 // set up middleware
 app.UseStaticFiles();
 app.UseRouting();
